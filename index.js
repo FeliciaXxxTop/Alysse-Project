@@ -1,10 +1,27 @@
-const {
-  default: makeWASocket,
-  useMultiFileAuthState,
-  DisconnectReason,
-  fetchLatestBaileysVersion
+const { 
+    default: makeWASocket, 
+    prepareWAMessageMedia, 
+    useMultiFileAuthState, 
+    DisconnectReason, 
+    fetchLatestBaileysVersion, 
+    makeInMemoryStore, 
+    generateWAMessageFromContent, 
+    generateWAMessageContent, 
+    generateWAMessage,
+    jidDecode, 
+    proto, 
+    delay,
+    relayWAMessage, 
+    getContentType, 
+    getAggregateVotesInPollMessage, 
+    downloadContentFromMessage, 
+    fetchLatestWaWebVersion, 
+    InteractiveMessage, 
+    makeCacheableSignalKeyStore, 
+    Browsers, 
+    generateForwardMessageContent, 
+    MessageRetryMap 
 } = require("@whiskeysockets/baileys");
-
 const P = require("pino");
 
 async function startBot() {
